@@ -1,0 +1,16 @@
+{
+  "devDependencies": {
+    "body-parser": "^1.15.1",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.13.4",
+    "http": "0.0.0",
+    "open": "0.0.5",
+    "path": "^0.12.7",
+    "socket.io": "^1.4.6",
+    "swig": "^1.4.2"
+  },
+  "scripts": {
+    "prestart": "npm install",
+    "start": "node server.js"
+  }
+}

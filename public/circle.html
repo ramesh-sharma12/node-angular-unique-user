@@ -1,0 +1,45 @@
+ <div class="header col-sm-12">Program to check unique user for each tabs</div>
+<div class="col-sm-8">	   
+	<form class="form">
+		<div class="col-sm-12">
+			<label>Choose Color</label>
+		</div>		
+		<div class="colorPicker col-sm-1" ng-repeat="color in bgColors">
+			<button class="circle" ng-click="updateColor(color)" style="background-color: {{color}}"></button>
+		</div>
+
+		<div class="col-sm-8 pull-left">
+		    <label> Please enter name and click submit</label>
+			<input type="text" class="form-control" ng-model="userName" placeholder="Your Name"></input>
+		</div>
+
+		<div class="col-sm-4 pull-right btn-submit">
+			<button class="btn btn-primary" ng-click="onSubmit();">Submit</button>
+		</div>
+	</form>	
+
+</div>
+
+<div class="col-sm-3">
+		<div class="col-sm-12">
+					<label>Your Selected Color</label>
+		</div>	
+		<div class="col-sm-12">
+			<div class="circle selected" style="background-color: {{selectedColor}}"></div>
+		</div>
+	    
+</div>
+
+<div class="col-sm-11 active-user">
+	<div class="text-center">Active Users</div>
+	<div class="col-sm-12">
+		<div class="col-sm-2 clearfix draggable"
+		 style="left:{{user.cords.left}}; top: {{user.cords.top}}"
+		 id="user_{{user.userId}}"
+		 ng-repeat="user in users">
+					<div class="circle"  style="background-color: {{user.color}}" ng-class=" {'active' : user.isCurrentUser}"></div>
+					<div>{{user.userName}}</div>
+		</div>		
+			
+	</div>
+</div>

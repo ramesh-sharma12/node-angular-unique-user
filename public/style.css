@@ -1,0 +1,52 @@
+.header{
+	height:40px;
+	text-align: center;	
+	background-color: #abcedd;	
+    color: #130000;
+    font:20px solid;
+    padding:5px;
+}
+.wrapper{
+	width: 800;
+	margin: 0 auto;
+	background-color: #000;
+	color: white;
+	height: 100%;
+}
+
+.colorPicker{
+	margin:10px;
+}
+
+.circle{
+	height:20px;
+	width: 20px;
+	border-radius: 50%;
+	zoom: 2;
+	border: none;	
+}
+
+.selected{
+	border: 1px solid #fff;
+	zoom: 5;	
+	margin: 10px;
+}
+
+.active{
+	border: 1px solid #fff;	
+	zoom:3;
+}
+
+form{
+	margin: 0 auto;
+}
+
+.btn-submit{
+	margin-top: 25px;
+}
+
+.active-user{
+	margin: 10px;
+    border: 1Px solid;
+    min-height:300px;
+}
